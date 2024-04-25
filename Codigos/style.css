@@ -10,9 +10,11 @@ body {
     min-height: 100vh;
     background-color: rgba(255, 255, 255, 0.295);
 }
-main{
+
+main {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+
 header {
     background-color: black;
     color: white;
@@ -41,7 +43,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
-section { font-size: 5vw;
+section>p {
+    padding-bottom: 1em;
+}
+
+section {
+    font-size: 5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -53,16 +60,35 @@ section.normal {
     color: black;
 
 }
+
 section.imagem {
     background-color: rgba(0, 0, 0, 0.774);
-    color: white;
-}
-section.imagem > p{
-    padding: 5px;
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.363);
+    color: white; 
+    box-shadow: inset 6px  6px 13px 0px rgba(0, 0, 0, 0.63);
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
+section.imagem>p {
+    padding: 5px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.616);
+    text-shadow: 1px 1px 0px black ;
+
+}
+
+#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+
+}
+
+#img02 {
+    background-image: url(../imagens/background002.jpg);
+
+}
 
 footer {
     background-color: black;
